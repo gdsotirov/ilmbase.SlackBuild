@@ -17,7 +17,7 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 # 
-# $Id: ilmbase.SlackBuild,v 1.3 2012/09/02 08:15:12 gsotirov Exp $
+# $Id: ilmbase.SlackBuild,v 1.4 2012/09/02 08:18:00 gsotirov Exp $
 #
 
 . ../../slack-package.conf
@@ -61,6 +61,7 @@ CXXFLAGS=$SLKCFLAGS \
 ./configure --build=$ARCH-slackware-linux \
             --host=$ARCH-slackware-linux \
             --prefix=/usr \
+            --libdir=/usr/lib${LIBDIRSUFFIX} \
             --sysconfdir=/etc \
             --mandir=/usr/man \
             --enable-shared=yes \
