@@ -17,13 +17,13 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 # 
-# $Id: ilmbase.SlackBuild,v 1.6 2015/04/19 10:08:32 gsotirov Exp $
+# $Id: ilmbase.SlackBuild,v 1.7 2015/04/19 10:33:22 gsotirov Exp $
 #
 
 . ../../slack-package.conf
 
 NAME=ilmbase
-VERSION=2.1.0
+VERSION=2.2.0
 BUILD=${BUILD:-1}
 
 TMP=${TMP:-/tmp}
