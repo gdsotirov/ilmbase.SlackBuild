@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # Slackware build script for IlmBase
-# Copyright (C) 2007-2015 Georgi D. Sotirov <gdsotirov@dir.bg>
+# Copyright (C) 2007-2016 Georgi D. Sotirov <gdsotirov@dir.bg>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -17,7 +17,7 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 # 
-# $Id: ilmbase.SlackBuild,v 1.7 2015/04/19 10:33:22 gsotirov Exp $
+# $Id: ilmbase.SlackBuild,v 1.8 2016/08/02 13:34:22 gsotirov Exp $
 #
 
 . ../../slack-package.conf
