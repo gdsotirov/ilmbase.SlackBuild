@@ -104,7 +104,7 @@ cat $PKG/install/slack-desc > $PKG_DIR/${PKGNAME}.txt
 
 # Clean up (optional)
 if [ "$1" == "--cleanup" ]; then
-  rm -r $SRC
+  rm -r $TMP/${SNAME}-${VERSION}
   rm -r $PKG
 fi
 
