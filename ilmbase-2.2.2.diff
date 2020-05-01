@@ -1,11 +1,20 @@
 # Patch to reutrn major VERSION, SOVERSION and LIBTOOL_CURRENT to 12 to avoid
-# breaking dependencies, because verstion 2.2.1 is patch only relese including
+# breaking dependencies, because verstion 2.2.2 is patch only relese including
 # only security fixes and no new functionality or API changes
 # See https://github.com/openexr/openexr/commit/e69de40ddbb6bd58341618a506b2e913e5ac1797
 # See https://github.com/openexr/openexr/issues/250
-diff -urNad ilmbase-2.2.1-orig/CMakeLists.txt ilmbase-2.2.1/CMakeLists.txt
---- ilmbase-2.2.1-orig/CMakeLists.txt	2017-11-18 01:00:23.000000000 +0200
-+++ ilmbase-2.2.1/CMakeLists.txt	2017-12-10 12:57:36.083952557 +0200
+diff -urNad openexr-2.2.2-orig/IlmBase/CMakeLists.txt openexr-2.2.2/IlmBase/CMakeLists.txt
+--- openexr-2.2.2-orig/IlmBase/CMakeLists.txt	2020-04-30 20:45:37.000000000 +0300
++++ openexr-2.2.2/IlmBase/CMakeLists.txt	2020-05-01 14:36:02.621798218 +0300
+@@ -5,7 +5,7 @@
+ 
+ SET(ILMBASE_VERSION_MAJOR "2")
+ SET(ILMBASE_VERSION_MINOR "2")
+-SET(ILMBASE_VERSION_PATCH "1")
++SET(ILMBASE_VERSION_PATCH "2")
+ 
+ SET(ILMBASE_VERSION ${ILMBASE_VERSION_MAJOR}.${ILMBASE_VERSION_MINOR}.${ILMBASE_VERSION_PATCH})
+ SET(ILMBASE_VERSION_API ${ILMBASE_VERSION_MAJOR}_${ILMBASE_VERSION_MINOR})
 @@ -160,31 +160,31 @@
  
  SET_TARGET_PROPERTIES ( Half
@@ -48,23 +57,9 @@ diff -urNad ilmbase-2.2.1-orig/CMakeLists.txt ilmbase-2.2.1/CMakeLists.txt
    OUTPUT_NAME "IexMath${ILMBASE_LIBSUFFIX}"
    )
  
-diff -urNad ilmbase-2.2.1-orig/configure ilmbase-2.2.1/configure
---- ilmbase-2.2.1-orig/configure	2017-11-18 01:05:28.000000000 +0200
-+++ ilmbase-2.2.1/configure	2017-12-10 12:57:44.148263461 +0200
-@@ -3115,7 +3115,7 @@
- 
- 
- 
--LIBTOOL_CURRENT=23
-+LIBTOOL_CURRENT=12
- LIBTOOL_REVISION=0
- LIBTOOL_AGE=0
- LIBTOOL_VERSION=$LIBTOOL_CURRENT:$LIBTOOL_REVISION:$LIBTOOL_AGE
- 
- 
-diff -urNad ilmbase-2.2.1-orig/configure.ac ilmbase-2.2.1/configure.ac
---- ilmbase-2.2.1-orig/configure.ac	2017-11-18 01:00:24.000000000 +0200
-+++ ilmbase-2.2.1/configure.ac	2017-12-10 12:57:50.419727563 +0200
+diff -urNad openexr-2.2.2-orig/IlmBase/configure.ac openexr-2.2.2/IlmBase/configure.ac
+--- openexr-2.2.2-orig/IlmBase/configure.ac	2020-04-30 20:45:37.000000000 +0300
++++ openexr-2.2.2/IlmBase/configure.ac	2020-05-01 14:36:35.800035588 +0300
 @@ -15,7 +15,7 @@
  AM_MAINTAINER_MODE
  
@@ -74,5 +69,3 @@ diff -urNad ilmbase-2.2.1-orig/configure.ac ilmbase-2.2.1/configure.ac
  LIBTOOL_REVISION=0
  LIBTOOL_AGE=0
  LIBTOOL_VERSION=$LIBTOOL_CURRENT:$LIBTOOL_REVISION:$LIBTOOL_AGE
- AC_SUBST(LIBTOOL_VERSION)
- 
