@@ -1,4 +1,4 @@
-ilmbase: IlmBase (A collecton of basic Ilm libraries)
+ilmbase: IlmBase (A collection of basic Ilm libraries)
 ilmbase:
 ilmbase: Half is a class that encapsulates Ilm's 16-bit floating-point
 ilmbase: format.
@@ -8,4 +8,4 @@ ilmbase: pthreads and Windows threads.
 ilmbase: Imath implements 2D and 3D vectors, 3x3 and 4x4 matrices,
 ilmbase: quaternions and other useful 2D and 3D math functions.
 ilmbase: Iex is an exception-handling library.
-ilmbase: Packaged by Georgi D. Sotirov <gdsotirov@dir.bg>
+ilmbase: Packaged by Georgi D. Sotirov <gdsotirov@gmail.com>
